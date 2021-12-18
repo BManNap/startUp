@@ -1,8 +1,8 @@
 from lib import *
 from tk import *
-import os
 
 def main():
+    openSSH("5", "5")
     pass
 
 if __name__ == '__main__':
