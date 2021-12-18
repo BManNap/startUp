@@ -1,3 +1,5 @@
 from tk import *
-
-def 
+import os
+def openSSH(ip, password):
+    os.system("gnome-terminal & disown")
+    pass
