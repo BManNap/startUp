@@ -2,3 +2,4 @@ main screen, cool colors
 shortcuts to
 -ssh pi@192.168.0.128
 -open visual studio and firefox
+-set default changable project to boot into when vs code is pressed
