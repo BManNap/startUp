@@ -8,7 +8,8 @@ root.config(bg="#957DAD")
 
 def main():
     piSSH = Button(root, text="Pi SSH", bg="#FEC8D8", highlightthickness = 0, bd = 0,command=lambda:openSSH("pi", "192.168.0.128"))
-    piSSH.grid(row=1, column=1)
+    piSSH.place(relx = 0.4, rely = 0.4, anchor = CENTER)
+    vsCode = Button(root, text="vsCode", bg=" #FFA6C9", highlightthickness = 0, bd = 0,command=lambda:openVsCode())
     pass
 
 if __name__ == '__main__':
