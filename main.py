@@ -13,7 +13,8 @@ def main():
     piSSH.place(relx = 0.4, rely = 0.4, anchor = CENTER)
     vsCode = Button(root, text="vsCode",height=1, width=10, bg="#FFA6C9", highlightthickness =0, bd =0, highlightbackground="black",command=lambda:openVsCode())
     vsCode.place(relx=0.4, rely=0.5, anchor=CENTER)
-    
+    turnOff = Button(root, text="Shutdown",height=1, width=10, bg="#FEC8D8", highlightthickness =0, bd =0, highlightbackground="black", command=lambda:shutdown())
+    turnOff.place(relx = 0.6, rely = 0.4, anchor = CENTER)
 
 if __name__ == '__main__':
     main()

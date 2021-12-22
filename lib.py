@@ -3,6 +3,9 @@ import os
 def openSSH(username, ip):
     os.system(f"gnome-terminal -- ssh {username}@{ip}")
     pass
-def openVsCode():
-    os.system(f"code")
+def openVsCode(loc=""):
+    os.system(f"code {loc}")
+    pass
+def shutdown():
+    os.system(f"gnome-terminal -- echo EL501179 | sudo -S apt-get update & sudo -S apt-get upgrade & sudo shutdown ")
     pass
