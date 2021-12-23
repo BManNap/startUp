@@ -6,6 +6,7 @@ root.geometry("500x250")
 root.config(bg="#957DAD")
 
 def main():
+    global cancel
     #title
     Name = Label(root, text="TeddyBear", height=1, width=25)
     Name.place(relx=0.5, rely=0.3, anchor=CENTER)
@@ -29,7 +30,9 @@ def main():
     turnOff.place(relx = 0.6, rely = 0.7, anchor = CENTER)
     restart = Button(root, text="restart",height=1, width=10, bg="#FEC8D8", highlightthickness =0, bd =0, highlightbackground="black", command=lambda:shutdown("-r"))
     restart.place(relx = 0.4, rely = 0.7, anchor = CENTER)
-
+    cancel = Button(root, text="Cancel Shutdown", height=1, width=10, bg="#FEC8D8", highlightthickness =0, bd =0, highlightbackground="black", command=lambda:cancelShutdown())
+    cancel.place(relx = 0.4, rely = 0.8, anchor = CENTER)
+    
 if __name__ == '__main__':
     main()
     root.mainloop()
