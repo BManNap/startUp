@@ -1,14 +1,14 @@
 from tkinter import *
 import os
 def openSSH(username, ip):
-    os.system(f"gnome-terminal -- ssh {username}@{ip}")
+    os.system(f"gnome-terminal -- ssh {username}@{ip} & disown")
     pass
 def openVsCode(loc=""):
-    os.system(f"code {loc}")
+    os.system(f"code {loc} & disown")
     pass
 def openFireFox():
-    os.system("firefox")
+    os.system("firefox & disown")
     pass
 def openSpotify():
-    os.system("spotify")
+    os.system("spotify & disown")
     pass
