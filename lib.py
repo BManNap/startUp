@@ -6,6 +6,6 @@ def openSSH(username, ip):
 def openVsCode(loc=""):
     os.system(f"code {loc}")
     pass
-def shutdown():
-    os.system(f"gnome-terminal -- echo EL501179 | sudo -S apt-get update & sudo -S apt-get upgrade & sudo shutdown ")
+def shutdown(extraS=""):
+    os.system(f"gnome-terminal -- echo EL501179 | sudo -S apt-get update & sudo -S apt-get upgrade & sudo shutdown {extraS} ")
     pass
