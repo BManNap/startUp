@@ -7,7 +7,7 @@ def openVsCode(loc=""):
     os.system(f"code {loc}")
     pass
 def shutdown(extraS=""):
-    os.system(f"gnome-terminal -- echo EL501179 | sudo -S apt-get update & sudo -S apt-get upgrade & sudo shutdown {extraS} ")
+    os.system(f"gnome-terminal -- sudo -S apt-get update & sudo -S apt-get upgrade & sudo shutdown {extraS}")
     pass
 def openFireFox():
     os.system("firefox")
