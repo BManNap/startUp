@@ -2,6 +2,7 @@ from lib import *
 from tkinter import *
 
 root = Tk()
+root.title("Hey Love")
 root.geometry("500x250")
 root.config(bg="#957DAD")
 
