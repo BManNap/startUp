@@ -5,7 +5,6 @@ root = Tk()
 root.title("Hey Love")
 root.geometry("500x250")
 root.config(bg="#957DAD")
-
 def main():
     global cancel
     #title
