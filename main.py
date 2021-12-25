@@ -19,11 +19,14 @@ def main():
     vsCode = Button(root, text="vsCode",height=1, width=10, bg="#FFA6C9", highlightthickness =0, bd =0, highlightbackground="black",command=lambda:openVsCode())
     vsCode.place(relx=0.4, rely=0.5, anchor=CENTER)
     fireFox = Button(root, text="FireFox",height=1, width=10, bg="#FFA6C9", highlightthickness =0, bd =0, highlightbackground="black",command=lambda:openFireFox())
-    fireFox.place(relx=0.6, rely=0.5, anchor=CENTER)
+    fireFox.place(relx=0.605, rely=0.5, anchor=CENTER)
 
     #Spotify
     spotify = Button(root, text="Spotify",height=1, width=10, bg="#FFA6C9", highlightthickness =0, bd =0, highlightbackground="black",command=lambda:openSpotify())
     spotify.place(relx=0.4, rely=0.6, anchor=CENTER)
+
+    discord = Button(root, text="Discord",height=1, width=10, bg="#FFA6C9", highlightthickness =0, bd =0, highlightbackground="black",command=lambda:openDiscord())
+    discord.place(relx=0.605, rely=0.6, anchor=CENTER)
 
 if __name__ == '__main__':
     main()

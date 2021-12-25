@@ -12,3 +12,6 @@ def openFireFox():
 def openSpotify():
     os.system("spotify & disown")
     pass
+def openDiscord():
+    os.system("discord & disown")
+    pass
